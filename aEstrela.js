@@ -18,7 +18,24 @@ function aStarAlgorithm(graph, start, goal) {
   
     // Função para calcular a heurística (distância estimada) entre dois vértices
     function heuristicCost(vertexA, vertexB) {
-      // Implemente aqui uma heurística apropriada para o seu problema
+      
+      const matrizDistancias = [
+        [0, 7, 15, 8, 19, 23, 21, 33, 30, 37, 42, 49, 45, 59], //Oliveira Fortes
+        [7, 0, 20, 7, 12, 26, 19, 35, 25, 36, 38, 42, 40, 52], //Paiva
+        [15, 20, 0, 17, 32, 13, 24, 25, 35, 31, 43, 54, 48, 64], //São João da Serra
+        [8, 7, 17, 0, 16, 19, 14, 28, 22, 30, 34, 41, 37, 51], //Aracitaba
+        [19, 12, 32, 16, 0, 34, 20, 40, 18, 36, 35, 33, 34, 42], //Mercês
+        [23, 26, 13, 19, 34, 0, 18, 13, 30, 20, 33, 18, 40, 57], //Piau
+        [21, 19, 24, 14, 20, 18, 0, 20, 12, 18, 21, 31, 25, 41], //Tabuleiro
+        [33, 35, 25, 28, 40, 13, 20, 0, 29, 10, 25, 44, 34, 53], //Goianá
+        [30, 25, 35, 22, 18, 30, 12, 29, 0, 22, 16, 19, 16, 29], //Rio Pomba
+        [37, 36, 31, 30, 36, 20, 18, 10, 22, 0, 11, 35, 25, 43], //Rio Novo
+        [42, 38, 43, 34, 35, 33, 21, 25, 16, 11, 0, 21, 9, 28], //Guarani
+        [49, 42, 54, 41, 33, 48, 31, 44, 19, 35, 21, 0, 11, 11], //Tocantins
+        [45, 40, 48, 37, 34, 40, 25, 34, 16, 25, 9, 11, 0, 19], //Piraúba
+        [59, 52, 64, 51, 42, 57, 41, 53, 29, 43, 28, 11, 19, 0] //Ubá
+      ]
+
       return 0; // Neste exemplo, usaremos uma heurística trivial (não admissível)
     }
   
