@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --roboto: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+}
+
+body {
+    background-color: #202020;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map {
+    background-image: url(./mapa.png);
+    width: 100vw;
+    height: calc(100vw * 0.62223);
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+}
+
+#map button {
+    width: calc(100vw * 0.01);
+    height: calc(100vw * 0.01);
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: aqua;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#map button:hover {
+    background-color: red;
+}
+
+#map #p0 {
+    top: 53%;
+    left: 5%;
+}
+
+#map #p1 {
+    top: 42%;
+    left: 10%;
+}
+
+#map #p2 {
+    top: 84%;
+    left: 8%;
+}
+
+#map #p3 {
+    top: 53%;
+    left: 15%;
+}
+
+#map #p4 {
+    top: 20%;
+    left: 20%;
+}
+
+#map #p5 {
+    top: 91%;
+    left: 23%;
+}
+
+#map #p6 {
+    top: 56%;
+    left: 32%;
+}
+
+#map #p7 {
+    top: 96%;
+    left: 38%;
+}
+
+#map #p8 {
+    top: 37%;
+    left: 41%;
+}
+
+#map #p9 {
+    top: 83%;
+    left: 48%;
+}
+
+#map #p10 {
+    top: 56%;
+    left: 59%;
+}
+
+#map #p11 {
+    top: 15%;
+    left: 62%;
+}
+
+#map #p12 {
+    top: 37%;
+    left: 62%;
+}
+
+#map #p13 {
+    top: 4%;
+    left: 73%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+header button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: white;
+    color: #202020;
+}
+
+#data {
+    padding: 48px;
+}
