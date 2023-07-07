@@ -63,6 +63,7 @@ function aStarAlgorithm(graph, start, goal) {
         console.log(reversedPath)
         for(let i = 0; i < reversedPath.length - 1; i++){
             value += graph[reversedPath[i]][reversedPath[i+1]]
+            console.log(value)
         }
         return value
       }
@@ -110,13 +111,23 @@ function aStarAlgorithm(graph, start, goal) {
   
   // Matriz de adjacência representando o grafo
   const adjacencyMatrix = [
-    [ 0, 1, 1, 1 ],  // arestas de A
-    [ 1, 0, 0, 1 ],  // arestas de B
-    [ 1, 0, 0, 1 ],  // arestas de C
-    [ 1, 1, 1, 0 ]   // arestas de D
+    [0, 10, 28, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], //Oliveira Fortes
+    [10, 0, 0, 0, 19, 0, 0, 0, 40, 0, 0, 0, 0, 0], //Paiva
+    [28, 0, 0, 0, 0, 20, 30, 0, 0, 0, 0, 0, 0, 0], //São João da Serra
+    [10, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0], //Aracitaba
+    [0, 19, 0, 0, 0, 0, 27, 0, 25, 0, 0, 0, 0, 0,], //Mercês
+    [0, 0, 20, 0, 0, 0, 30, 24, 0, 0, 0, 0, 0, 0], //Piau
+    [0, 0, 30, 24, 27, 30, 0, 40, 15, 27, 0, 0, 0, 0,], //Tabuleiro
+    [0, 0, 0, 0, 0, 24, 40, 0, 0, 12, 0, 0, 0, 0], //Goianá
+    [0, 40, 0, 0, 25, 0, 15, 0, 0, 0, 0, 26, 20, 0], //Rio Pomba
+    [0, 0, 0, 0, 0, 0, 27, 12, 0, 0, 20, 0, 0, 0], //Rio Novo
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 11, 0], //Guarani
+    [0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 21, 13], //Tocantins
+    [0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 11, 21, 0, 0], //Piraúba
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0] //Ubá
   ]
   
-  const startVertex = 1; // Vértice inicial
-  const goalVertex = 2; // Vértice objetivo
+  const startVertex = 0; // Vértice inicial
+  const goalVertex = 13; // Vértice objetivo
   
   console.log("Caminho mais curto:", aStarAlgorithm(adjacencyMatrix, startVertex, goalVertex));
