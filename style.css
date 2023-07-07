@@ -122,7 +122,7 @@ h1, h2 {
     left: 73%;
 }
 
-header {
+header, .compare {
     position: sticky;
     top: 0;
     background-color: #202020;
@@ -131,6 +131,10 @@ header {
     z-index: 1;
     text-transform: uppercase;
     padding: 20px;
+}
+
+.compare h2 {
+    padding-bottom: 42px;
 }
 
 header button {
@@ -148,6 +152,40 @@ header button:hover {
     color: #202020;
 }
 
-#data {
+.compare {
     padding: 48px;
+    justify-content: center;
+    flex-direction: column;
 }
+
+footer {
+    flex-direction: row !important;
+}
+
+table {
+    border-collapse: initial;
+}
+
+table th, table tr td:first-child {
+    background-color: #202020;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+table td {
+    background-color: #fff;
+    color: #202020;
+    padding: 4px;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: aquamarine;
+}
+

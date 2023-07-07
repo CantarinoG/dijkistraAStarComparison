@@ -32,11 +32,64 @@
                 <button class="vertex" id="p13"></button>
             </div>
         </section>
-        <section id="data">
-            <table></table>
+        <section class="compare">
+            <h2>Comparação:</h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Característica</th>
+                    <th>Algoritmo de Dijkstra</th>
+                    <th>Algoritmo A*</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Objetivo</td>
+                    <td>Encontrar o caminho mais curto entre um vértice de origem e todos os outros vértices em um grafo ponderado</td>
+                    <td>Encontrar o caminho mais curto entre um vértice de origem e um vértice de destino específico em um grafo ponderado</td>
+                  </tr>
+                  <tr>
+                    <td>Heurística</td>
+                    <td>Não utiliza heurística</td>
+                    <td>Utiliza uma heurística admissível para guiar a busca</td>
+                  </tr>
+                  <tr>
+                    <td>Estrutura de Dados</td>
+                    <td>Usa uma fila de prioridade para selecionar o vértice com menor distância atual</td>
+                    <td>Usa uma fila de prioridade baseada na função de custo total (f = g + h), onde g é o custo acumulado do caminho percorrido até o momento e h é a heurística que estima o custo restante até o destino</td>
+                  </tr>
+                  <tr>
+                    <td>Complexidade de Tempo</td>
+                    <td>O(V^2)</td>
+                    <td>O(b^d), onde b é o fator de ramificação médio e d é a profundidade da solução ótima</td>
+                  </tr>
+                  <tr>
+                    <td>Complexidade de Espaço</td>
+                    <td>O(V)</td>
+                    <td>O(b^d)</td>
+                  </tr>
+                  <tr>
+                    <td>Admissibilidade</td>
+                    <td>Sempre encontra o caminho mais curto se não houver pesos negativos</td>
+                    <td>Sempre encontra o caminho mais curto se a heurística for admissível (não superestima o custo restante)</td>
+                  </tr>
+                  <tr>
+                    <td>Utilização</td>
+                    <td>Útil quando o objetivo é encontrar o caminho mais curto entre um vértice de origem e todos os outros vértices em um grafo</td>
+                    <td>Útil quando o objetivo é encontrar o caminho mais curto entre um vértice de origem e um vértice de destino específico em um grafo, especialmente em problemas de busca em largura (pathfinding)</td>
+                  </tr>
+                  <tr>
+                    <td>Aplicação Exemplo</td>
+                    <td>Roteamento em redes de computadores, GPS, otimização de trajetos</td>
+                    <td>Jogos (pathfinding), sistemas de navegação, planejamento de rota</td>
+                  </tr>
+                </tbody>
+              </table>
         </section>
     </main>
-    <footer></footer>
+    <footer class="compare">
+        <a target=”_blank” href="https://github.com/CantarinoG/dijkistraAStarComparison">Repositório do GitHub</a> &nbsp;| Feito por <a target=”_blank” href="https://github.com/CantarinoG">&nbsp;@CantarinoG</a>&nbsp; e &nbsp;<a target=”_blank” href="https://github.com/neidi-olive">&nbsp;@neidi-olive</a>
+    </footer>
 
 </body>
 
